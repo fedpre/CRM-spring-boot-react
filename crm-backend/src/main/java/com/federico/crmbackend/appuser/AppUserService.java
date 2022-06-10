@@ -33,8 +33,10 @@ public class AppUserService implements UserDetailsService{
         if (userExists) {
             // TODO check of attributes are the same and
             // TODO if email not confirmed send confirmation email.
-
-            throw new IllegalStateException("Email already taken.");
+            boolean isEnabled = appUser.getEnabled();
+            if (isEnabled) {
+                throw new IllegalStateException("Email already taken.");
+            }
         }
 
         String encodedPassword = bCryptPasswordEncoder.encode(appUser.getPassword());
@@ -51,9 +53,6 @@ public class AppUserService implements UserDetailsService{
         );
 
         confirmationTokenService.savedConfirmationToken(confirmationToken);
-
-        // TODO: SEND EMAIL
-
         return token;
     }
 
