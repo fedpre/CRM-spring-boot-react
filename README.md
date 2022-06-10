@@ -24,6 +24,10 @@
 
 {Make a list of websites that you found helpful in this project}
 * [Spring Boot Initialized](https://spring.io/) 
+* [Spring Boot Project Initializer](https://start.spring.io/)
+* [Beginner Spring Boot Tutorial: REST API](https://www.youtube.com/watch?v=9SGDpanrc8U)
+* [Complete User Login Registration Backend](https://www.youtube.com/watch?v=QwQuro7ekvc&t=163s)
+* [Spring Boot Project Initializer](https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.0&packaging=jar&jvmVersion=18&groupId=com.federico&artifactId=crm-backend&name=crm-backend&description=CRM%20application%20for%20business&packageName=com.federico.crm-backend&dependencies=lombok,web,security,postgresql,data-jpa,mail)
 
 # Future Work
 

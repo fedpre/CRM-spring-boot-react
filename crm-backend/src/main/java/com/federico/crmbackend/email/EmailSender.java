@@ -1,0 +1,5 @@
+package com.federico.crmbackend.email;
+
+public interface EmailSender {
+    void send(String to, String email);
+}
