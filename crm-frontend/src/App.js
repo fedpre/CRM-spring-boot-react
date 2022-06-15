@@ -88,6 +88,8 @@ const App = () => {
     setIsDarkTheme(!isDarkTheme);
   };
 
+  const [studentInfo, setStudentInfo] = useState()
+
 
   return (
     <>
@@ -103,12 +105,12 @@ const App = () => {
           </FormGroup>
         </Box>
       </Container>
-    </ThemeProvider>
       <Routes>
         <Route path='/' element={<Dashboard />} />
         <Route path='/register' element={<Registration />} />
-        <Route path='/students' element={<Students />} />
+        <Route path='/students' element={<Students studentInfo={studentInfo} setStudentInfo={setStudentInfo} />} />
       </Routes>
+    </ThemeProvider>
     </>
   );
 };

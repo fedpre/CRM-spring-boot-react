@@ -16,21 +16,25 @@ public class StudentController {
         this.studentService = studentService;
     }
 
+    @CrossOrigin
     @GetMapping
     public List<Student> getStudents() {
         return studentService.getStudents();
     }
 
+    @CrossOrigin
     @PostMapping
     public void registerNewStudent(@RequestBody Student student) {
         studentService.addNewStudent(student);
     }
 
+    @CrossOrigin
     @DeleteMapping(path = "{studentId}")
     public void deleteStudent(@PathVariable("studentId") Long studentId) {
         studentService.deleteStudent(studentId);
     }
 
+    @CrossOrigin
     @PutMapping(path = "{studentId}")
     public void updateStudent(
             @PathVariable("studentId") Long studentId,
