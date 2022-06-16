@@ -93,24 +93,24 @@ const App = () => {
 
   return (
     <>
-    <ThemeProvider theme={isDarkTheme ? createTheme(dark) : createTheme(light)}>
-      <CssBaseline />
-      <Container>
-        <Box sx={{ display: 'flex', flexDirection: 'row-reverse'}}>
-          <FormGroup>
-          <FormControlLabel
-            control={<MaterialUISwitch sx={{ m: 1 }} checked={isDarkTheme} onChange={changeTheme} />}
-            label={isDarkTheme ? "Dark Mode" : "Light Mode"}
-          />
-          </FormGroup>
-        </Box>
-      </Container>
-      <Routes>
-        <Route path='/' element={<Dashboard />} />
-        <Route path='/register' element={<Registration />} />
-        <Route path='/students' element={<Students studentInfo={studentInfo} setStudentInfo={setStudentInfo} />} />
-      </Routes>
-    </ThemeProvider>
+      <ThemeProvider theme={isDarkTheme ? createTheme(dark) : createTheme(light)}>
+        <CssBaseline />
+        <Container>
+          <Box sx={{ display: 'flex', flexDirection: 'row-reverse'}}>
+            <FormGroup>
+            <FormControlLabel
+              control={<MaterialUISwitch sx={{ m: 1 }} checked={isDarkTheme} onChange={changeTheme} />}
+              label={isDarkTheme ? "Dark Mode" : "Light Mode"}
+            />
+            </FormGroup>
+          </Box>
+        </Container>
+        <Routes>
+          <Route path='/' element={<Dashboard />} />
+          <Route path='/register' element={<Registration />} />
+          <Route path='/students' element={<Students studentInfo={studentInfo} setStudentInfo={setStudentInfo} />} />
+        </Routes>
+      </ThemeProvider>
     </>
   );
 };

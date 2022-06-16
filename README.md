@@ -11,7 +11,8 @@ The purpose of writing this sofwtare is to explore and learn more about React fo
 
 ### Start the server locally: 
 * Clone the GitHub repository
-  * If you need to install IntelliJ, click on this [link](https://www.jetbrains.com/toolbox-app/)
+  * If you need to install IntelliJ, click on this 
+  [link](https://www.jetbrains.com/toolbox-app/)
 * Start IntelliJ Community Edition
 * Open the folder 'backend-crm'
 * Open the "StudentApplication" java class
@@ -37,7 +38,7 @@ The purpose of writing this sofwtare is to explore and learn more about React fo
 
 Here is a video demonstration of starting the database, server, and React app as well as a demonstration of the software.
 
-[Student CRM Demo Video](http://youtube.link.goes.here)
+[Student CRM Demo Video](https://youtu.be/73VZi1gOeiI)
 
 # Web Pages
 
@@ -82,3 +83,4 @@ The students page shows dynamically, through a GET request to the RESTApi endpoi
 * Allow the user to update and delete students from the UI
 * Filter and sort students
 * Show a graph in the Dashboard to see how many new students has been added in the past day, month, and year
+* Secure the API endpoints with Spring Security
